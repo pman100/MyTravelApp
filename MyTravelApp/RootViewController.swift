@@ -37,6 +37,8 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController!.view.frame = pageViewRect
 
         self.pageViewController!.didMove(toParentViewController: self)
+        
+        print("This is the first commit")
     }
 
     override func didReceiveMemoryWarning() {
