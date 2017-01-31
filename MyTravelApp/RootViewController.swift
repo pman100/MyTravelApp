@@ -19,9 +19,18 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         // Configure the page view controller and add it as a child view controller.
         self.pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
         self.pageViewController!.delegate = self
-
+        
+        // This is where the initial view controller is loaded
         let startingViewController: DataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
+        
+        print("starting wiew cotroller \(startingViewController.dataObject)")
         let viewControllers = [startingViewController]
+        print("number of viewControllers = \(viewControllers.count)")
+        
+        for element in viewControllers{
+            print("ViewControllerArray \(element.dataObject)")
+        }
+        
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
 
         self.pageViewController!.dataSource = self.modelController

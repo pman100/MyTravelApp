@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C85518321E410AC400119E37 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85518311E410AC400119E37 /* MapKit.framework */; };
 		C872440C1E3E6A470039342B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440B1E3E6A470039342B /* AppDelegate.swift */; };
 		C872440E1E3E6A470039342B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440D1E3E6A470039342B /* RootViewController.swift */; };
 		C87244101E3E6A470039342B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440F1E3E6A470039342B /* DataViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C85518311E410AC400119E37 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C87244081E3E6A470039342B /* MyTravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C872440B1E3E6A470039342B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C872440D1E3E6A470039342B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85518321E410AC400119E37 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C85518301E410AC400119E37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C85518311E410AC400119E37 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C87243FF1E3E6A470039342B = {
 			isa = PBXGroup;
 			children = (
 				C872440A1E3E6A470039342B /* MyTravelApp */,
 				C87244091E3E6A470039342B /* Products */,
+				C85518301E410AC400119E37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +116,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = MFC573848B;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -310,6 +327,7 @@
 				C87244201E3E6A470039342B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

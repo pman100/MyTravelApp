@@ -28,13 +28,20 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         // Create the data model.
         let dateFormatter = DateFormatter()
         pageData = dateFormatter.monthSymbols
+        
+        //print("pageData = \(pageData)")
     }
 
+    
+    // MARK : This is where we load data into a page
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {
         // Return the data view controller for the given index.
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
+            
+            // This can never happen
             return nil
         }
+        print("Index VC  = \(index)")
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
@@ -53,6 +60,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = self.indexOfViewController(viewController as! DataViewController)
         if (index == 0) || (index == NSNotFound) {
+            print("now index is at \(index)")
             return nil
         }
         
@@ -63,15 +71,19 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         var index = self.indexOfViewController(viewController as! DataViewController)
         if index == NSNotFound {
+            
             return nil
         }
         
         index += 1
         if index == self.pageData.count {
+            print("now index1 is at \(index)")
             return nil
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
+    
+    
 
 }
 
