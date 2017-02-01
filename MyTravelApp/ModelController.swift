@@ -29,7 +29,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         let dateFormatter = DateFormatter()
         pageData = dateFormatter.monthSymbols
         
-        //print("pageData = \(pageData)")
+        
     }
 
     
@@ -41,7 +41,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
             // This can never happen
             return nil
         }
-        print("Index VC  = \(index)")
+       
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
@@ -60,7 +60,6 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = self.indexOfViewController(viewController as! DataViewController)
         if (index == 0) || (index == NSNotFound) {
-            print("now index is at \(index)")
             return nil
         }
         
@@ -77,7 +76,6 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         
         index += 1
         if index == self.pageData.count {
-            print("now index1 is at \(index)")
             return nil
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)

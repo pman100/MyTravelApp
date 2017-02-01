@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-101" y="-243"/>
         </scene>
-        <!--Data View Controller-->
+        <!--Data Source-->
         <scene sceneID="snT-py-3hH">
             <objects>
                 <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" customModule="MyTravelApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,9 +81,13 @@
                                             <constraint firstItem="Mzr-EH-eWq" firstAttribute="width" secondItem="9nN-8p-T17" secondAttribute="width" id="qQl-tf-1Md"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7" customClass="iCarousel">
                                         <rect key="frame" x="0.0" y="350" width="394" height="346"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="S4R-Ja-viH" id="8R2-Kb-Xix"/>
+                                            <outlet property="delegate" destination="S4R-Ja-viH" id="nEM-ud-nqP"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -101,6 +105,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dataImageView" destination="s1b-V9-EN7" id="Dvf-Hy-Qgh"/>
                         <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
                         <outlet property="dataMapView" destination="XiS-Eg-TYZ" id="crc-D1-udd"/>
                         <outlet property="dataTextView" destination="9nN-8p-T17" id="Wa9-gz-rsW"/>
