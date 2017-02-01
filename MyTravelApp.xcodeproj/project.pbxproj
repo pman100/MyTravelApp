@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C85518321E410AC400119E37 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85518311E410AC400119E37 /* MapKit.framework */; };
+		C8604CC11E428BA300193295 /* MyDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8604CBF1E428BA300193295 /* MyDataModel.xcdatamodeld */; };
+		C8604CC31E428C0300193295 /* DataModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8604CC21E428C0300193295 /* DataModelController.swift */; };
 		C872440C1E3E6A470039342B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440B1E3E6A470039342B /* AppDelegate.swift */; };
 		C872440E1E3E6A470039342B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440D1E3E6A470039342B /* RootViewController.swift */; };
 		C87244101E3E6A470039342B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440F1E3E6A470039342B /* DataViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		C85518311E410AC400119E37 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C8604CC01E428BA300193295 /* MyDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDataModel.xcdatamodel; sourceTree = "<group>"; };
+		C8604CC21E428C0300193295 /* DataModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModelController.swift; sourceTree = "<group>"; };
 		C87244081E3E6A470039342B /* MyTravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C872440B1E3E6A470039342B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C872440D1E3E6A470039342B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				C8D6CE061E413D11008D6F78 /* iCarousel.h */,
 				C8D6CE071E413D11008D6F78 /* iCarousel.m */,
 				C8D6CE051E413D10008D6F78 /* MyTravelApp-Bridging-Header.h */,
+				C8604CBF1E428BA300193295 /* MyDataModel.xcdatamodeld */,
+				C8604CC21E428C0300193295 /* DataModelController.swift */,
 			);
 			path = MyTravelApp;
 			sourceTree = "<group>";
@@ -173,10 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C872440E1E3E6A470039342B /* RootViewController.swift in Sources */,
+				C8604CC31E428C0300193295 /* DataModelController.swift in Sources */,
 				C8D6CE081E413D11008D6F78 /* iCarousel.m in Sources */,
 				C87244121E3E6A470039342B /* ModelController.swift in Sources */,
 				C87244101E3E6A470039342B /* DataViewController.swift in Sources */,
 				C872440C1E3E6A470039342B /* AppDelegate.swift in Sources */,
+				C8604CC11E428BA300193295 /* MyDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +356,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8604CBF1E428BA300193295 /* MyDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8604CC01E428BA300193295 /* MyDataModel.xcdatamodel */,
+			);
+			currentVersion = C8604CC01E428BA300193295 /* MyDataModel.xcdatamodel */;
+			path = MyDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C87244001E3E6A470039342B /* Project object */;
 }
