@@ -29,7 +29,7 @@ class DataViewController: UIViewController, MKMapViewDelegate, iCarouselDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         dataImageView.type = .cylinder
+         dataImageView.type = .timeMachine
         dataMapView.delegate = self
        /*dataMapView.mapType = .standard
         let location = CLLocationCoordinate2D(latitude: 23.0250, longitude: 72.5714)
@@ -139,7 +139,7 @@ class DataViewController: UIViewController, MKMapViewDelegate, iCarouselDataSour
             return value
         case iCarouselOption.wrap:
             print("iCarousel, wrap = \(value)")
-            return value
+            return 1.0
         }
         
     }
