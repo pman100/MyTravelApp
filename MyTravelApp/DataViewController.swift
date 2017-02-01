@@ -140,8 +140,6 @@ class DataViewController: UIViewController, MKMapViewDelegate, iCarouselDataSour
         case iCarouselOption.wrap:
             print("iCarousel, wrap = \(value)")
             return value
-        default:
-            return value
         }
         
     }
