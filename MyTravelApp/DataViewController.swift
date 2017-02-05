@@ -41,6 +41,8 @@ class DataViewController: UIViewController, MKMapViewDelegate, iCarouselDataSour
         
         newDate.day = Date.init() as NSDate?
         
+        myCoreData.saveContext()
+        
        /*dataMapView.mapType = .standard
         let location = CLLocationCoordinate2D(latitude: 23.0250, longitude: 72.5714)
         let span = MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100)
