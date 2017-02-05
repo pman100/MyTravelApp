@@ -19,6 +19,10 @@ class DataViewController: UIViewController, MKMapViewDelegate, iCarouselDataSour
     var dataObject: String = ""
     var items: [Int] = []
     
+    // CoreData test
+    
+    let myCoreData = MyCoreData.shared
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         for i in 0 ... 99 {
@@ -31,6 +35,12 @@ class DataViewController: UIViewController, MKMapViewDelegate, iCarouselDataSour
         super.viewDidLoad()
          dataImageView.type = .timeMachine
         dataMapView.delegate = self
+       
+        // CoreData test
+        let newDate = Details(context: myCoreData.context)
+        
+        newDate.day = Date.init() as NSDate?
+        
        /*dataMapView.mapType = .standard
         let location = CLLocationCoordinate2D(latitude: 23.0250, longitude: 72.5714)
         let span = MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100)
@@ -50,6 +60,7 @@ class DataViewController: UIViewController, MKMapViewDelegate, iCarouselDataSour
        self.dataLabel!.text = dataObject
         
     }
+    
     
     
     // MARK : iCarousel

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C85518321E410AC400119E37 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85518311E410AC400119E37 /* MapKit.framework */; };
 		C8604CC11E428BA300193295 /* MyDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8604CBF1E428BA300193295 /* MyDataModel.xcdatamodeld */; };
-		C8604CC31E428C0300193295 /* DataModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8604CC21E428C0300193295 /* DataModelController.swift */; };
 		C872440C1E3E6A470039342B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440B1E3E6A470039342B /* AppDelegate.swift */; };
 		C872440E1E3E6A470039342B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440D1E3E6A470039342B /* RootViewController.swift */; };
 		C87244101E3E6A470039342B /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C872440F1E3E6A470039342B /* DataViewController.swift */; };
@@ -19,12 +18,12 @@
 		C872441A1E3E6A470039342B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87244181E3E6A470039342B /* LaunchScreen.storyboard */; };
 		C8D6CE081E413D11008D6F78 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D6CE071E413D11008D6F78 /* iCarousel.m */; };
 		C8D6CE0A1E413D90008D6F78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D6CE091E413D90008D6F78 /* QuartzCore.framework */; };
+		D0A030B31E4763AD00D17E98 /* MyCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A030B21E4763AD00D17E98 /* MyCoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C85518311E410AC400119E37 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C8604CC01E428BA300193295 /* MyDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDataModel.xcdatamodel; sourceTree = "<group>"; };
-		C8604CC21E428C0300193295 /* DataModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModelController.swift; sourceTree = "<group>"; };
 		C87244081E3E6A470039342B /* MyTravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C872440B1E3E6A470039342B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C872440D1E3E6A470039342B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		C8D6CE061E413D11008D6F78 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		C8D6CE071E413D11008D6F78 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		C8D6CE091E413D90008D6F78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D0A030B21E4763AD00D17E98 /* MyCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCoreData.swift; path = ../MyCoreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 				C8D6CE071E413D11008D6F78 /* iCarousel.m */,
 				C8D6CE051E413D10008D6F78 /* MyTravelApp-Bridging-Header.h */,
 				C8604CBF1E428BA300193295 /* MyDataModel.xcdatamodeld */,
-				C8604CC21E428C0300193295 /* DataModelController.swift */,
+				D0A030B21E4763AD00D17E98 /* MyCoreData.swift */,
 			);
 			path = MyTravelApp;
 			sourceTree = "<group>";
@@ -179,12 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C872440E1E3E6A470039342B /* RootViewController.swift in Sources */,
-				C8604CC31E428C0300193295 /* DataModelController.swift in Sources */,
 				C8D6CE081E413D11008D6F78 /* iCarousel.m in Sources */,
 				C87244121E3E6A470039342B /* ModelController.swift in Sources */,
 				C87244101E3E6A470039342B /* DataViewController.swift in Sources */,
 				C872440C1E3E6A470039342B /* AppDelegate.swift in Sources */,
 				C8604CC11E428BA300193295 /* MyDataModel.xcdatamodeld in Sources */,
+				D0A030B31E4763AD00D17E98 /* MyCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
